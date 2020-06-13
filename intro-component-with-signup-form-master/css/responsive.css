@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .heading p {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .body {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  .heading h1 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .box-blue {
+    padding: 15px;
+  }
+  .box-btn {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
