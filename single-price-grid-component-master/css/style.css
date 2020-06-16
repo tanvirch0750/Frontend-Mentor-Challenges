@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+.gray-blue {
+  color: hsl(218, 22%, 67%);
+  font-size: 17px;
+  opacity: 0.8;
+  padding: 0 80px 0 0;
+}
+.gray-blue:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+p {
+  color: #fff;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 30px;
+}
+
+.yellow {
+  color: hsl(71, 73%, 54%);
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.s-heading {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+section {
+  padding: 40px 30px;
+}
+
+.top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  grid-area: top;
+  background-color: #fff;
+}
+
+.bottom-left {
+  background-color: hsl(179, 62%, 43%);
+  grid-area: left;
+  border-bottom-left-radius: 5px;
+}
+.bottom-right {
+  background-color: hsl(179, 47%, 52%);
+  grid-area: right;
+  border-bottom-right-radius: 5px;
+}
+
+.bottom-left p {
+  opacity: 0.8;
+}
+
+ul li {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  margin-top: 41px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price p {
+  color: hsl(179, 43%, 75%);
+}
+
+.price span {
+  color: #fff;
+  font-size: 40px;
+  margin-right: 10px;
+}
