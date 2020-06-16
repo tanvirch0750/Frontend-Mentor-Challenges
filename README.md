@@ -1,5 +1,5 @@
 # Frontend-Mentor-Challenges
 
-My submission for frontend mentor chalenges
+My submission for frontend mentor challenges
 
-see it [live](https://affectionate-bardeen-2b494c.netlify.app/)
+see it [live](https://suspicious-hawking-2c506e.netlify.app/)
