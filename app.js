@@ -1,31 +1,44 @@
-const projects = [
-  "four-card-feature-section-master",
-  "base-apparel-coming-soon-master",
-  "intro-component-with-signup-form-master",
-  "single-price-grid-component-master",
-  "ping-coming-soon-page-master"
+const projects = [{
+    name: "four-card-feature-section",
+  },
+  {
+    name: "base-apparel-coming-soon",
+  },
+  {
+    name: "intro-component-with-signup-form",
+  },
+  {
+    name: "single-price-grid-component",
+  },
+  {
+    name: "ping-coming-soon-page",
+  },
 ];
 
-const list = document.getElementById('list');
+const list = document.getElementById("list");
 
-projects.forEach((project, i) => {
-  const listItem = document.createElement('li');
-  const link = document.createElement('a');
-  link.href = `/${project}/index.html`;
-  link.innerText = `${i + 1}. ${formatProjectName(project)}`;
+projects.forEach(({
+  name
+}, i) => {
+  const listLink = document.createElement("a")
+  const listItem = document.createElement("li");
+  listLink.href = `/${name}/index.html`;
 
-  const img = document.createElement('img');
-  img.src = `/${project}/design/desktop-design.jpg`;
+  listItem.innerHTML = `
+    <img src="/${name}/design/desktop-design.jpg"/>
+    <p>${i + 1}. ${formatProjectName(name)}</p>
 
-  list.appendChild(listItem);
-  link.prepend(img);
-  listItem.appendChild(link);
-
+    <div class="link-container">
+      <a href="/${name}/index.html"><i class="fas fa-eye"></i></a>
+    </div>
+  `;
+  list.appendChild(listLink)
+  listLink.appendChild(listItem);
 });
 
 function formatProjectName(name) {
   return name
-    .split('-')
-    .map(word => word[0].toUpperCase() + word.slice(1))
-    .join(' ');
+    .split("-")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
 }
