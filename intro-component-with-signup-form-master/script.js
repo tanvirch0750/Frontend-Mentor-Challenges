@@ -5,22 +5,20 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const formControl = document.querySelectorAll(".form-control");
 
-
-
 function addErrorTo(field, message) {
   const errorElementAdd = field.parentNode;
-  console.log(errorElementAdd);
+  //console.log(errorElementAdd);
 
-  errorElementAdd.classList.add('error');
+  errorElementAdd.classList.add("error");
 
   const emailPlaceholder = document.getElementsByName("Email")[0];
-  emailPlaceholder.value = '';
-  emailPlaceholder.placeholder = 'email@example.com';
+  emailPlaceholder.value = "";
+  emailPlaceholder.placeholder = "email@example.com";
 
   const errorText = errorElementAdd.querySelector("p");
   errorText.innerText = message;
   errorText.style.opacity = "1";
-  formControl.forEach(item => item.style.marginBottom = "40px");
+  formControl.forEach((item) => (item.style.marginBottom = "40px"));
 }
 
 function removeError(field) {
@@ -36,7 +34,7 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-form.addEventListener('submit', e => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const firstNameValue = firstName.value;
@@ -71,4 +69,4 @@ form.addEventListener('submit', e => {
   } else {
     removeError(password);
   }
-})
+});
