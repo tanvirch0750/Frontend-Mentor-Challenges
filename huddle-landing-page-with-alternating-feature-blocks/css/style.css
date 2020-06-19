@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@600&display=swap");
+
+/* todo-> PRIMARY CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 20px;
+}
+
+h1 {
+  line-height: 48px;
+  max-width: 400px;
+}
+
+p {
+  color: hsl(208, 11%, 55%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex > div {
+  flex: 1;
+}
+
+.btn {
+  padding: 15px 60px;
+  border-radius: 50px;
+  background-color: #fff;
+  cursor: pinter;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+/* todo -> HEADER PART CSS */
+header {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-position: center center;
+  background-size: cover;
+  background-color: hsl(193, 100%, 96%);
+  padding: 40px 0;
+  margin-bottom: 100px;
+}
+
+.header-content {
+}
+
+header p {
+  margin-bottom: 30px;
+  max-width: 511px;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* todo -> main section */
+.box {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  margin: 40px 0;
+  padding: 60px;
+}
+
+.box img {
+  width: 80%;
+}
+
+.first-img {
+  text-align: end;
+}
+.last-img {
+  text-align: end;
+}
+
+.box-cta {
+  display: inline-block;
+  margin-bottom: -60%;
+}
+
+/* todo -> footer section */
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 180px 0 60px;
+}
+
+footer .footer-logo {
+  margin-bottom: 50px;
+  fill: #fff;
+}
+
+.footer-content {
+  display: flex;
+}
+.footer-content > div {
+  flex: 1;
+  justify-self: center;
+}
+
+.footer-content .footer-address {
+  flex: 2;
+}
+
+/* .footer-content > div:not(:first-child) {
+  padding-left: 60px;
+} */
+
+.footer-list {
+  display: flex;
+  align-items: start;
+}
+.footer-list .address {
+  max-width: 364px;
+}
+.footer-list .circle {
+  margin-right: 10px;
+}
+
+footer ul {
+  /* padding: 0; */
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer ul li img {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.nav-items ul li {
+  margin-left: 50px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .circle {
+  margin-right: 5px;
+}
+
+.circle-border {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer .copy {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
