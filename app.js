@@ -20,6 +20,9 @@ const projects = [
   {
     name: "fylo-landing-page",
   },
+  {
+    name: "insure-landing-page",
+  },
 ];
 
 const list = document.getElementById("list");
