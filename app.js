@@ -1,5 +1,4 @@
-const projects = [
-  {
+const projects = [{
     name: "four-card-feature-section",
   },
   {
@@ -23,11 +22,16 @@ const projects = [
   {
     name: "insure-landing-page",
   },
+  {
+    name: "single-introductory-section",
+  },
 ];
 
 const list = document.getElementById("list");
 
-projects.forEach(({ name }, i) => {
+projects.forEach(({
+  name
+}, i) => {
   const listLink = document.createElement("a");
   const listItem = document.createElement("li");
   listLink.href = `/${name}/index.html`;

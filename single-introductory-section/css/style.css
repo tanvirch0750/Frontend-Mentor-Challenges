@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+p {
+  color: #fff;
+  opacity: 0.8;
+  max-width: 89%;
+  line-height: 24px;
+}
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.flex {
+  display: flex;
+  align-items: start;
+}
+
+.flex .left {
+  flex: 55%;
+}
+.flex .right {
+  flex: 45%;
+  align-self: center;
+}
+.flex > div:first-child {
+  margin-right: 20px;
+}
+.flex > div:last-child {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 80px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  padding: 15px 60px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+ul a {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+  }
+
+  .logo {
+    width: 200px;
+  }
+  button {
+    padding: 15px 80px;
+  }
+  img {
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    max-width: 100%;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  .flex .left {
+    flex: 1;
+    margin-bottom: 50px;
+  }
+  .flex .right {
+    flex: 1;
+    align-self: center;
+  }
+  .flex > div:first-child {
+    margin-right: 0;
+  }
+  .flex > div:last-child {
+    margin-left: 0;
+  }
+}
