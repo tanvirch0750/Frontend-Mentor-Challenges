@@ -25,6 +25,9 @@ const projects = [{
   {
     name: "single-introductory-section",
   },
+  {
+    name: "pricing-component-with-toggle",
+  },
 ];
 
 const list = document.getElementById("list");
