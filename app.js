@@ -1,15 +1,24 @@
-const projects = [{
-    name: "four-card-feature-section",
+const projects = [
+  {
+    name: "easybank-landing-page",
+  },
+  {
+    name: "insure-landing-page",
   },
   {
     name: "base-apparel-coming-soon",
   },
   {
-    name: "intro-component-with-signup-form",
-  },
-  {
     name: "single-price-grid-component",
   },
+  {
+    name: "four-card-feature-section",
+  },
+
+  {
+    name: "intro-component-with-signup-form",
+  },
+
   {
     name: "ping-coming-soon-page",
   },
@@ -19,9 +28,7 @@ const projects = [{
   {
     name: "fylo-landing-page",
   },
-  {
-    name: "insure-landing-page",
-  },
+
   {
     name: "single-introductory-section",
   },
@@ -32,9 +39,7 @@ const projects = [{
 
 const list = document.getElementById("list");
 
-projects.forEach(({
-  name
-}, i) => {
+projects.forEach(({ name }, i) => {
   const listLink = document.createElement("a");
   const listItem = document.createElement("li");
   listLink.href = `/${name}/index.html`;
