@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Project tracking intro component</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav flex flex__sb flex__ai-c">
+          <a href="#">
+            <img src="images/logo.svg" alt="logo" class="header__logo" />
+          </a>
+
+          <a href="#" class="header__hamburger" id="hamburger">
+            <img
+              src="images/icon-hamburger.svg"
+              alt="hamburger"
+              class="header__open"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt="close"
+              class="header__close"
+            />
+          </a>
+
+          <ul class="header__list flex flex__ai-c">
+            <li class="header__list-item">
+              <a href="#" class="header__link">Product</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li class="header__list-item header__dot"></li>
+            <li class="header__list-item">
+              <a class="header__login" href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="hero">
+      <div class="container flex flex__ai-s mobile-hero">
+        <div class="hero__left">
+          <h3 class="hero__h3"><span>New</span> Monograph Dashboard</h3>
+          <h1 class="hero__heading">
+            Powerful insights into your team
+          </h1>
+          <p class="hero__text">
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="btn-red">Schedule a demo</a>
+            <a href="#" class="btn-light">to see a live preview</a>
+          </div>
+        </div>
+        <div class="hero__right">
+          <img
+            src="images/illustration-devices.svg"
+            alt="hero image"
+            class="hero__img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+  New
+  Monograph Dashboard
+
+  Powerful insights into your team
+  Project planning and time tracking for agile teams
+
+  Schedule a demo
+  to see a live preview
+   -->
+    <script src="app.js"></script>
+  </body>
+</html>

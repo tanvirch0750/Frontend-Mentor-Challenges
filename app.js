@@ -12,11 +12,16 @@ const projects = [
     name: "single-price-grid-component",
   },
   {
-    name: "four-card-feature-section",
-  },
-
-  {
     name: "intro-component-with-signup-form",
+  },
+  {
+    name: "project-tracking-intro-component",
+  },
+  {
+    name: "pricing-component-with-toggle",
+  },
+  {
+    name: "four-card-feature-section",
   },
 
   {
@@ -31,9 +36,6 @@ const projects = [
 
   {
     name: "single-introductory-section",
-  },
-  {
-    name: "pricing-component-with-toggle",
   },
 ];
 

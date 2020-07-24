@@ -1,0 +1,116 @@
+.header {
+  padding: 6rem 0;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 8rem;
+  }
+
+  &__logo {
+    @media screen and (max-width: 500px) {
+      width: 2.7rem;
+    }
+  }
+
+  &__list {
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      position: fixed;
+      top: 120px;
+      left: 27px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      width: calc(100% - 54px);
+      padding: 25px;
+      z-index: 99;
+      transform: translateX(500%);
+      transition: transform 300ms ease;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @media screen and (max-width: 500px) {
+      display: block;
+    }
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__show-nav .header__list {
+    transform: translateX(0);
+  }
+
+  &__show-nav .header__close {
+    display: block;
+  }
+  &__show-nav .header__open {
+    display: none;
+  }
+
+  &__list-item {
+    &:not(:first-child) {
+      margin-left: 4rem;
+
+      @media screen and (max-width: 500px) {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $veryDarkBlue;
+    font-weight: 700;
+    transition: 300ms;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.3rem;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $veryDarkBlue;
+    }
+  }
+
+  &__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: $grayishBlue;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      border-radius: 0;
+      height: 0.1rem;
+      opacity: 0.5;
+    }
+  }
+
+  &__login {
+    text-transform: uppercase;
+    color: $grayishBlue;
+    font-weight: 700;
+    transition: 300ms;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.3rem;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $grayishBlue;
+    }
+  }
+}

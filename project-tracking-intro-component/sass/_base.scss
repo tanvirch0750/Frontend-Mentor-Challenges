@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 993px) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: $white;
+  color: $grayishBlue;
+  overflow-x: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 60vh;
+    background-color: $lightGrayish;
+    z-index: -1;
+    border-bottom-left-radius: 60px;
+
+    @media screen and (max-width: 500px) {
+      height: 65vh;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: $veryDarkBlue;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 112rem;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+
+  &__sb {
+    justify-content: space-between;
+  }
+
+  &__ai-c {
+    align-items: center;
+  }
+
+  &__ai-s {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-hero {
+    flex-direction: column-reverse;
+  }
+}
+
+.btn-red {
+  background-color: $primary;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-right: 3rem;
+  transition: 300ms;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 2rem;
+    padding: 1.3rem 2.8rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-light {
+  text-transform: uppercase;
+  color: $grayishBlue;
+  letter-spacing: 0.4rem;
+
+  @media screen and (max-width: 900px) {
+    letter-spacing: 0.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+  }
+}
