@@ -8,9 +8,7 @@ const projects = [
   {
     name: "base-apparel-coming-soon",
   },
-  {
-    name: "single-price-grid-component",
-  },
+
   {
     name: "intro-component-with-signup-form",
   },
@@ -21,7 +19,13 @@ const projects = [
     name: "pricing-component-with-toggle",
   },
   {
+    name: "fylo-landing-page",
+  },
+  {
     name: "four-card-feature-section",
+  },
+  {
+    name: "single-price-grid-component",
   },
 
   {
@@ -29,9 +33,6 @@ const projects = [
   },
   {
     name: "huddle-landing-page",
-  },
-  {
-    name: "fylo-landing-page",
   },
 
   {
