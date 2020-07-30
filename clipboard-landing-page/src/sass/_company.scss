@@ -1,0 +1,22 @@
+.company {
+  &__logos {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    flex: 1;
+    padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}

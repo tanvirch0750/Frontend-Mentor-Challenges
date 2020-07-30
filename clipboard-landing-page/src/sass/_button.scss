@@ -1,0 +1,30 @@
+.button {
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+  transition: 300ms ease;
+  font-size: 1.6rem;
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__ios {
+    background-color: $strong-cyan;
+    border-bottom: 3px solid darken($strong-cyan, 4%);
+    box-shadow: 0 9px 16px hsl(171, 66%, 80%);
+  }
+
+  &__mac {
+    background-color: $light-blue;
+    border-bottom: 3px solid darken($light-blue, 8%);
+    box-shadow: 0 6px 12px hsl(233, 100%, 80%);
+  }
+}

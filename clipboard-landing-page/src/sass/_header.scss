@@ -1,0 +1,20 @@
+.header {
+  background-image: url(../../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $xl 0;
+
+  &__logo {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+}

@@ -1,0 +1,114 @@
+.footer {
+  background-color: hsl(201, 11%, 97%);
+  text-align: center;
+  padding: 8rem 0 6rem 0;
+
+  @media screen and (min-width: 900px) {
+    text-align: left;
+  }
+
+  &__grid {
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) 2fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo listOne listTwo listThree social"
+        "logo listOne listTwo ... ...";
+      justify-items: start;
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    margin-bottom: 5rem;
+
+    @media screen and (min-width: 900px) {
+      grid-area: logo;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    &--one {
+      margin-bottom: 2rem;
+      @media screen and (min-width: 900px) {
+        grid-area: listOne;
+      }
+    }
+
+    &--two {
+      margin-bottom: 2rem;
+      @media screen and (min-width: 900px) {
+        grid-area: listTwo;
+      }
+    }
+
+    &--three {
+      @media screen and (min-width: 900px) {
+        grid-area: listThree;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: $dark-grayish-blue;
+    font-weight: 500;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      color: $strong-cyan;
+    }
+  }
+
+  &__social {
+    margin-top: 6rem;
+    @media screen and (min-width: 900px) {
+      grid-area: social;
+      margin-top: 0;
+      justify-self: end;
+    }
+
+    &--facebook {
+      padding-right: 2.5rem;
+
+      svg path {
+        transition: 300ms ease-in-out;
+        &:hover {
+          fill: $light-blue;
+        }
+      }
+    }
+
+    &--twitter {
+      padding-right: 2.5rem;
+
+      svg path {
+        transition: 300ms ease-in-out;
+        &:hover {
+          fill: $strong-cyan;
+        }
+      }
+    }
+
+    &--instagram {
+      svg path {
+        transition: 300ms ease-in-out;
+        &:hover {
+          fill: $strong-cyan;
+        }
+      }
+    }
+  }
+}

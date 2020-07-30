@@ -1,0 +1,14 @@
+.intro {
+  padding-bottom: $l;
+  max-width: 72rem;
+  margin: 0 auto;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 1.3rem;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

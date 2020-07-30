@@ -19,6 +19,9 @@ const projects = [
     name: "pricing-component-with-toggle",
   },
   {
+    name: "clipboard-landing-page",
+  },
+  {
     name: "fylo-landing-page",
   },
   {

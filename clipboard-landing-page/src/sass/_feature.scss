@@ -1,0 +1,26 @@
+.feature {
+  &__items {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  &__icon {
+    width: 4rem;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
