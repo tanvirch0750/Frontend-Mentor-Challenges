@@ -2,4 +2,4 @@
 
 My submission for frontend mentor challenges
 
-see all the projects live [here](https://suspicious-hawking-2c506e.netlify.app/)
+see all the projects live [here](https://frontend-mentor-challenges-tanvir.netlify.app/)
